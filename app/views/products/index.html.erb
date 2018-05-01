@@ -1,1 +1,22 @@
-<h1>Holal Mundo. Me encuentras en app/views/products/index.html.erb</h1>
+<h1>Productos</h1>
+
+<table border="1">
+	<tr>
+		
+		<th>Id</th>
+		<th>Nombre</th>
+		<th>URL</th>
+		<th>Descripcion</th>
+
+	</tr>
+
+	<% @products.each do |producto|  %>
+	<tr>
+		<td><%= producto.id %></td>
+		  <td><%= producto.name %></td>
+		  <td><%= producto.url %></td>
+		  <td><%= producto.description %></td>  
+	</tr>
+	<% end %>
+
+</table>
