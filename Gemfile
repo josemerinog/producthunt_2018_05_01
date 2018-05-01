@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.5'
 
 ############################################################
 # OJO: las siguientes gemas añaden bootstrap 4 al proyecto creado en Rails >5
+# nueva: https://github.com/twbs/bootstrap-rubygem
 
 gem 'bootstrap', '~> 4.1.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
@@ -40,6 +41,8 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 #   gem 'jquery-rails'
 
 gem 'jquery-rails'
+
+# Aquí Otra vez hacer bundle install.
 
 # Ahora en el archivo app/assets/javascripts/application.js
 
