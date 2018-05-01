@@ -22,6 +22,34 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+############################################################
+# OJO: las siguientes gemas añaden bootstrap 4 al proyecto creado en Rails >5
+
+gem 'bootstrap', '~> 4.1.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
+# Luego de copiar estas 2 lineas hacer bundle install
+
+# Después de correr bundle install hay que cambiar la extensión de application.css 
+# a application.scss se encuentra en app/assets/stylesheets/application.css
+# Borrar el contenido de este archivo y copiar lo siguiente:
+#     @import "bootstrap";
+# Luego agregar la gema jquery-rails al gemfile para Rails mayor que 5.
+
+#   gem 'jquery-rails'
+
+gem 'jquery-rails'
+
+# Ahora en el archivo app/assets/javascripts/application.js
+
+# //= require jquery3
+# //= require popper
+# //= require bootstrap-sprockets
+
+# Aquí terminó instalacion de Bootstrap 4 en Rails 5 y mayores.
+###########################################################
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
